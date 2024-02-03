@@ -1,8 +1,6 @@
 import React from 'react'
-import './s1.scss'
 
-
-const Section1 = () => {
+const Groum = () => {
   return (
     <div>
       
@@ -10,4 +8,4 @@ const Section1 = () => {
   )
 }
 
-export default Section1
+export default Groum

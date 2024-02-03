@@ -1,7 +1,6 @@
 import React from 'react'
-import './s2.scss'
 
-const Section2 = () => {
+const Profile = () => {
   return (
     <div>
       
@@ -9,4 +8,4 @@ const Section2 = () => {
   )
 }
 
-export default Section2
+export default Profile

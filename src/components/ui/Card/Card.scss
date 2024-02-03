@@ -1,0 +1,26 @@
+.card{
+    max-width: 600px;
+    max-height: 600px;
+    min-width: 200px;
+    min-height: 200px;
+    border: 1px solid #222;
+    padding: 10px;
+    border-radius: .6rem;
+    text-align: center;
+    transition: .4s ease-out;
+
+    h5{
+        font-weight: 500;
+        font-size: 20px;
+    }
+    span{
+        font-weight: 300;
+        font-size: 16px;
+    }
+}
+
+.card:hover{
+    -webkit-box-shadow: 18px 20px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 18px 20px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 18px 20px 8px 0px rgba(34, 60, 80, 0.2);
+}

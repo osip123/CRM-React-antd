@@ -1,0 +1,22 @@
+.zone_containner{
+    height: 100vh;
+    gap: 20px;
+    max-width: 100%;
+    padding: 25px;
+
+    h1{
+        margin: 0;
+        padding: 0;
+        font-weight: 500;
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+
+    .main__cont{
+        max-width: 100%;
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
