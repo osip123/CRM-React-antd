@@ -3,4 +3,9 @@ menu{
     height: 86%;
     width: 240px;
     background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
 }

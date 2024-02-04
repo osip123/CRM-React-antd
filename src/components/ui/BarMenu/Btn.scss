@@ -1,5 +1,13 @@
 .link{
     width: 100%;
-    height: 30px;
-    background-color: black;
+    height: 40px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link.active{
+    background-color: #f2f4f7;
+    border-radius: .4rem;
 }

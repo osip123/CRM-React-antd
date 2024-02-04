@@ -1,0 +1,24 @@
+.containner_group{
+    margin: 0 auto;
+    padding: 15px;
+    width: 100%;
+    height: 60px;
+    border-radius: .4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    span{
+        font-size: 15px;
+        font-weight: 300;
+    }
+}
+
+.containner_group:hover{
+    height: 60px;
+    border-radius: .4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f4f7;
+}
