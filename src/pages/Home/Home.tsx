@@ -1,4 +1,6 @@
 import './Home.scss'
+
+import { redirect } from 'react-router-dom';
 import CardModel from '../../components/ui/Card/CardModel'
 import axios from 'axios';
 import { Spin } from 'antd';
@@ -7,6 +9,7 @@ const Home = () => {
 
   const [loading, setLoading] = useState(false);
   const [news, setNews ] = useState([]);
+  const [auth, setAuth] = useState(true);
 
   // https://jsonplaceholder.typicode.com/todos/1
 
@@ -16,7 +19,7 @@ const Home = () => {
   }
 
   useEffect(() => {
-    const apiUrl = ' https://jsonplaceholder.typicode.com/todos/1';
+    const apiUrl = ' https://jsonplaceholder.typicode.com/todos';
     axios.get(apiUrl).then((resp) => {
       const allPersons = resp.data;
       setNews(allPersons);
@@ -27,15 +30,21 @@ const Home = () => {
   console.log(news)
 
 
-  return (
-    <div className='zone_containner'>
+  if(auth){
+    return(
+          <div className='zone_containner'>
         <h1>News</h1>
         <div className="main__cont">
-
-        {loading? <div>сделать типизацию</div> : (<Spin />) }
+        {loading? <div>not</div> : (<Spin />) }
         </div>
     </div>
-  )
+    )
+  }
+  // else{
+  //   return redirect("/auth");
+  // }
+  
+
 }
 
 export default Home
